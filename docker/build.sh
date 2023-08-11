@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker image build . --tag "dashboard" # --no-cache
+docker image build . --tag "container-name" # --no-cache

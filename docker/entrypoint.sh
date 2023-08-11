@@ -4,4 +4,4 @@ npm install
 
 npm run deploy
 
-echo "> Ready on http://admin:$PASSWORD@localhost:8080/"
+echo "> Ready on http://localhost:8080/"

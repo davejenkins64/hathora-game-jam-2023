@@ -3,6 +3,7 @@ import { spawnReadline } from "../util/spawnReadline";
 
 const BASE_URL = "http://localhost:8000";
 const CONTAINER_PORT = new URL(BASE_URL).port;
+const CONTAINER_NAME = "container-name";
 const HOST_PORT = 8000;
 
 let isRunning = false;
@@ -10,7 +11,7 @@ let isRunning = false;
 await spawnReadline("docker", [
 	"container",
 	"ls",
-	"--filter name=\"dashboard\""
+	"--filter name=\"" + CONTAINER_NAME + "\""
 ], function(line) {
 	if (line.includes("Up")) {
 		isRunning = true;
@@ -34,11 +35,11 @@ if (!isRunning) {
 	spawnReadline("docker", [
 		"container",
 		"run",
-		"--name dashboard",
+		"--name " + CONTAINER_NAME,
 		"--rm",
 		"-it", // Required
 		"--publish " + HOST_PORT + ":" + CONTAINER_PORT,
-		"dashboard:latest"
+		CONTAINER_NAME + ":latest"
 	]);
 }
 
