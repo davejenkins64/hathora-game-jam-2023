@@ -6,7 +6,6 @@
 		"context": "../docker/",
 		"dockerfile": "../docker/Dockerfile"
 	},
-	"remoteUser": "root",
 	"customizations": {
 		"vscode": {
 			"extensions": [
