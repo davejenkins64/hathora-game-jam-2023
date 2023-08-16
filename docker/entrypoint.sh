@@ -2,6 +2,6 @@
 
 npm install
 
-npm run deploy
+npm start
 
 echo "> Ready on http://localhost:8080/"
