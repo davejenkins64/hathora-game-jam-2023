@@ -18,5 +18,5 @@
 	},
 	"forwardPorts": [8000],
 	"postCreateCommand": "/entrypoint.sh",
-	"runArgs": ["--network=host"]
+	"runArgs": ["--network=bridge"]
 }
