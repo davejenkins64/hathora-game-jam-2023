@@ -6,6 +6,7 @@
   "author": "Brian Jenkins",
   "license": "MIT",
   "scripts": {
+    "build": "npx tsc public/*/*.ts --watch",
     "watch": "nodemon --ext ts,tsx --ignore dist --exec \"node --experimental-specifier-resolution=node --loader=ts-node/esm server.ts\"",
     "start": "node --experimental-specifier-resolution=node --loader=ts-node/esm server.ts"
   },
