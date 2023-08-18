@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!-- Metadata -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+
+	<!-- Title -->
+	<title>Quiz Show Game</title>
+
+	<!-- Thumbnails -->
+	<!-- TODO <link rel="shortcut icon" href="/images/favicon.png" /> -->
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="/css/quizshow.css" />
+
+	<!-- Scripts -->
+	<script src="/js/quizshow.js"></script>
+</head>
+<body onLoad="quizshow()">
+
+	<game-title>Quiz Show!</game-title>
+	<!-- #main -->
+	<players>
+		<player><player-name>Player 1</player-name><player-score>0</player-score></player>
+		<player><player-name>Player 2</player-name><player-score>0</player-score></player>
+		<player><player-name>Player 3</player-name><player-score>0</player-score></player>
+		<player><player-name>Player 4</player-name><player-score>0</player-score></player>
+	</players>
+
+	<countdown id="ready">Countdown to Start: 3</countdown>
+
+	<!-- show question, ready status or scores -->
+	<questions id="questions">
+		<question-prompt>Question appears here:</question-prompt>
+		<question-choice>Choice 1</question-choice>
+		<question-choice>Choice 2</question-choice>
+		<question-choice>Choice 3</question-choice>
+		<question-choice>Choice 4</question-choice>
+	</questions>
+
+	<countdown id="time-left">Time Left: 10</countdown>
+	<div id="rules">
+	<p>Rules:</p>
+	<ol>
+		<li>Guess as often as you like.</li>
+		<li>First person to guess right gets 5 points, second right gets 3.</li>
+		<li>Each guess costs 1 point.</li>
+		<li>Game ends when first person gets to 21.</li>
+		<li>Highest score wins!</li>
+	</ol>
+	</div>
+	<game-over id="game-over">Game Over!</game-over>
+</body>
+</html>

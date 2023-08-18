@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    color: #ddd;
+}
+
+game-title {
+    text-align: center;
+    font-size: 80px;
+    display: block;
+}
+
+players {
+    background-color: #222;
+    display: block;
+}
+
+player-name {
+    width: 50%;
+    float: left;
+    font-size: 40px;
+    background-color: #222;
+}
+
+player-score {
+    width: 50%;
+    float: right;
+    text-align: right;
+    font-size: 40px;
+    background-color: #222;
+}
+
+countdown {
+    font-size: 60px;
+    display: block;
+}
+
+questions {
+    background-color: #222;
+}
+
+question-prompt {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    background-color: #222;
+    display: block;
+}
+
+question-choice {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    background-color: #222;
+    display: block;
+}
+
+game-over {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    background-color: black;
+    display: block;
+}
